@@ -1,0 +1,130 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: url("image.jpg") no-repeat center center fixed; /* Full screen background */
+    background-size: cover;
+    color: #fff; /* Default text color */
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+.navbar {
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #00bcd4;
+}
+
+/* Section Styles */
+section {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.home-content h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: #00bcd4; /* Highlight color */
+}
+
+.home-content p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 15px;
+    font-size: 1em;
+    color: #fff;
+    background: #00bcd4;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #0192a7;
+}
+
+/* Common Section Styling */
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #00bcd4;
+}
+
+#about p, #education ul li, #skills ul li, #contact p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+#education ul, #skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+#contact iframe {
+    margin-top: 20px;
+    border: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+    }
+    .navbar ul li {
+        margin: 5px 0;
+    }
+
+    .home-content h1 {
+        font-size: 2.5em;
+    }
+
+    .home-content p {
+        font-size: 1em;
+    }
+}
